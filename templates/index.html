@@ -18,7 +18,7 @@
             </h1>
         </header>
         <div class="form">
-            <form action="">
+            <form>
                 <input type="text" name="long_url" id="long_url" class="form-control">
                 <br>
                 <input type="submit" value="Submit" class="btn btn-primary btn-lg">
@@ -28,5 +28,6 @@
             Shortened URL: <span id="result"></span>
         </div>
     </div>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
 </body>
 </html>
