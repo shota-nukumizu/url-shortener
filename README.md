@@ -105,7 +105,17 @@ py app.py
 ターミナルが以下のように表示されたら環境構築は終了。
 
 ```
-
+ * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+ * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.
+ * Debugger is active!
+ * Debugger PIN: 443-019-723
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
 # 開発環境
