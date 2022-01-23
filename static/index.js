@@ -1,4 +1,5 @@
 const form = document.querySelector('form')
+const resultSection = document.querySelector('#result')
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -20,6 +21,7 @@ form.addEventListener('submit', (e) => {
     .then(response => response.json())
     .then(data => {
         console.log(data)
+        resultSection.innerText = data.short_url
     })
     .catch(error => console.log(error))
 

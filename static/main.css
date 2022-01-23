@@ -6,7 +6,7 @@ header {
     margin-top: 20px;
 }
 
-.result {
+#result {
     font-size: 20px;
     color: dodgerblue;
 }

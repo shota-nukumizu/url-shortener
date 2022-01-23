@@ -1,6 +1,6 @@
 import requests
 from decouple import config
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 
 url = "https://url-shortener-service.p.rapidapi.com/shorten"
 
@@ -24,7 +24,9 @@ def index():
 
         response = requests.request("POST", url, data=payload, headers=headers)
 
-        print(response.json()['result_url'])
+        short_url = response.json()['result_url']
+
+        return jsonify({"short_url": short_url})
 
     return render_template('index.html')
 
